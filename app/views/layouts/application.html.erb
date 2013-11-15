@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>张家港天工机械制造有限公司</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+
+  <%= csrf_meta_tags %>
+  <meta name="keywords" content="张家港天工机械制造有限公司|天工|金刚石线|硅开方|硅截断|硅切片|精密倒丝机|收线机|金刚石电镀线 张家港天工 电镀金刚石线">
+  <meta name="description" content="张家港天工机械制造有限公司是专业从事金刚石线设备和各种规格的金刚线线切割设备产品, 以及相关配套设德的生产的企业">
+
+  <%= yield :head %>
+  <script>
+    $(function() {
+      $('li').hover(function() {
+        $(this).find('.link').hide().next().show();
+      }, function() {
+        $(this).find('.hover').hide().prev().show();;
+      });
+    });
+  </script>
+</head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="logo">
+          <div class="wrap" style='position: relative'>
+            <div style='float: right; margin-top: 10px'>
+              <%= link_to '登陆' %>
+            </div>
+
+            <div style='float: left'>
+              <%= image_tag 'logo.jpg' %>  <br>天  工 机 械
+            </div>
+
+            <h1 style='position: absolute; bottom: 10px; left: 85px'>张家港天工机械制造有限公司</h1>
+
+            <div style="clear: both"></div>
+          </div>
+        </div>
+
+
+        <div class="top">
+          <div class="menu">
+            <ul>
+              <li><a href="/">首页</a></li>
+              <li>
+                <a href="/about" class='link'>公司信息</a>
+                <div class="hidden hover"><a href="/about">公司信息</a></div>
+              </li>
+              <li>
+                <a href="/posts" class='link'>公司公告</a>
+                <div class="hidden hover"><a href="/posts">公司公告</a></div>
+              </li>
+              <li>
+                <a href="/products" class='link'>公司产品</a>
+                <div class="hidden hover"><a href="/products">公司产品</a></div>
+              </li>
+              <li>
+                <a href="/contact" class='link'>联系我们</a>
+                <div class="hidden hover"><a href="/contact">联系我们</a></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="flash">
+        <div class="wrap" style='position: relative'>
+          <div class="caption" style='position: absolute; top: 90px; width: 380px'>
+            <p>自动化操作,让生产更简单</p>
+            <p>在线检测，生产实时监控</p>
+            <p>生产线速度可达15—50m/min</p>
+          </div>
+
+          <%= image_tag 'a.jpg', width: "501px", height: "348px", style: "position: absolute; top: 30px; right: 0" %>
+        </div>
+      </div>
+
+      <div class="main wrap"><%= yield %></div>
+
+      <div class="footer">
+        <div class="wrap">
+          <div class="ui grid">
+            <div class="row">
+              <div class="six wide column">
+                <h4>关于天工</h4>
+                <p>我公司位于全国文明卫生城市，张家港市塘市镇，主营线材电线电缆表面处理设备以及金刚线切割设备,公司竭诚欢迎相关企业人士，成为我们的客户，成为我们的朋友，成为我们的伙伴！欢迎各界朋友莅临参观、指导和业务洽谈。</p>
+              </div>
+
+              <div class="five wide column">
+                <h4>联系我们</h4>
+                <city>
+                  联系人: 唐晓伟 先生 （总经理办公室 经理） <br>
+                  电 话:86 0512 58905516 <br>
+                  移动电话： 18662230008 <br>
+                  传   真：86 0512 58905516 <br>
+                </city>
+              </div>
+
+              <div class="five wide column">
+                <h4>联系我们</h4>
+                <city>
+                  联系人: 唐晓伟 先生 （总经理办公室 经理） <br>
+                  电 话:86 0512 58905516 <br>
+                  移动电话： 18662230008 <br>
+                  传   真：86 0512 58905516 <br>
+                </city>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

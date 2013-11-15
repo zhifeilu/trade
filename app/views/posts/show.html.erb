@@ -1,0 +1,10 @@
+<div class="post-content">
+  <h3 class='title'><%= @post.title %></h3>
+
+  <div class="markdown ">
+    <%= raw @post.body %>
+  </div>
+</div>
+
+<%= link_to 'Edit', edit_post_path(@post) %> |
+<%= link_to 'Back', posts_path %>

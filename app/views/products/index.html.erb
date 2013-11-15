@@ -1,0 +1,19 @@
+<h3 class="title">天工产品</h3>
+
+<div class="products">
+  <div class="ui four items">
+    <% @products.each do |product| %>
+      <div class="item">
+        <div class="image">
+          <%= link_to image_tag(product.logo.thumb.url), product %>
+        </div>
+
+        <div class="content">
+
+          <div class="name"><%= link_to product.name.truncate(10), product %></div>
+          <div class="">Price: (面议)</div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>

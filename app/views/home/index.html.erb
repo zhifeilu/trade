@@ -1,0 +1,30 @@
+<div class="three_list">
+  <div class="ui three connected items">
+    <div class="item">
+      <div class="image">
+        <h3>公司新品</h3>
+        <div class="ui instant masked move reveal">
+          <%= image_tag 'a.jpg', class: "visible content", width: "311px", height: "248px" %>
+          <%= image_tag 'b.jpg', class: "hidden content", width: "311px", height: "248px" %>
+        </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="image">
+        <h3>公司公告</h3>
+        <ul class='index_post'>
+          <% Post.limit(6).each do |post| %>
+            <li><%= link_to post.title %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <div class="item">
+      <div class="content">
+
+      </div>
+    </div>
+  </div>
+</div>

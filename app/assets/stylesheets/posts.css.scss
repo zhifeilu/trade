@@ -1,0 +1,45 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.posts{
+  li{
+    padding: 10px 0;
+    color: #48a682;
+    a{
+      text-decoration: none;
+    }
+  }
+  span.date {
+    display: inline-block;
+    width: 100px;
+    color: #48a682;
+  }
+}
+
+.post-content{
+  margin-bottom: 50px;
+  line-height: 22px;
+
+  h3.title{
+    text-align: center;
+  }
+}
+
+
+.flash{
+  position: relative;
+  background: transparent url(bg.jpg) no-repeat;
+  height: 406px;
+}
+
+div.caption  p {
+  background-color: rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  margin: 2px 0 0 0;
+  line-height: 48px;
+  padding: 0 13px 0 13px;
+  font-size: 26px;
+  color: #FFF;
+}

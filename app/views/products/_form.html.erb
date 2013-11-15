@@ -1,0 +1,9 @@
+<%= simple_form_for(@product) do |f| %>
+
+  <%= f.input :logo %>
+  <%= f.input :name %>
+  <%= f.input :body, :as => :ckeditor %>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

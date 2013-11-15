@@ -7,11 +7,11 @@ body {
 
 .top {
   height: 38px;
-  background: #fff url(bg_panel.gif) repeat-x 0 5px;
+  background: #fff url(/assets/bg_panel.gif) repeat-x 0 5px;
   overflow: hidden;
 
   .menu{
-    background: transparent url(bg_menu.jpg) no-repeat 0 0;
+    background: transparent url(/assets/bg_menu.jpg) no-repeat 0 0;
     width: 990px;
     text-align: left;
     margin: 0 auto;
@@ -39,7 +39,7 @@ body {
         display: block;
         overflow: hidden;
         width: 146px;
-        background: transparent url(ps_bg.jpg) no-repeat;
+        background: transparent url(/assets/ps_bg.jpg) no-repeat;
         line-height: 38px;
         text-align: center;
         a{
